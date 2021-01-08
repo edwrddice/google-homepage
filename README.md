@@ -1,0 +1,1 @@
+Hello, this is Edward Diaz. I will be creating a Google Homepage from scratch. I have some experience developing simple webpages on codepen.io, but this will be the first time publishing on Github. So please, take it easy on me! haha
