@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 
-
-
-<htmL>
+<htmL lang="en">
     <head>
-        <link rel="stylesheet" href="css/style.css" type="text/css"/> 
-        <title>Smogtown Laboratories Search Engine</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <link rel="stylesheet" href="googlestyle.css" type="text/css"/> 
+        <title>Smogtown Laboratories</title>
     </head>
 
 <body>
-    <header>Smogtown Laboratories</header>
-
-    <nav>
-        <ul>
-            <li><a href="#Smail">Smail</a> </li>
-            <li><a href="#Images">Images</a></li>
-        </ul>
-    </nav>
-
-
-    <div class="Smogtown">
-        <input id="searchbox" type="search" name="search-here" spellcheck="false"
-            autocomplete="off" placeholder="Search Smogtown or type a URL"
-            aria-live="polite"> 
-        <button>Search</button>
+    <div id="navbar">
+      <a href="#About" id="about">About</a>
+      <a href="#Store" id="store">Store</a>
+      <a href="#SMail" id="smail">SMail</a>
+      <a href="#Images" id="images">Images</a>
+      <a href="#" id="menu"><svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-v" class="svg-inline--fa fa-ellipsis-v fa-w-6" role="img" viewBox="0 0 192 512"><path fill="currentColor" d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"/></svg></a>
+      <a href="#SignIn" id="signin">Sign In</a>
     </div>
 
-    <footer>&copy; 2021 Smogtown Laboratories</footer>
+    <div id="main">
+        <a href="#" id="logo"><img id="responsive-image" width="960px" height="559px"  src="https://i.postimg.cc/MKjVWdyF/Laker-Legends1.png"></a>
+        <input type="text" id="search">
+        <div id="flexbox">
+            <button id="smogtown-search-btn">Smogtown Search</button>
+            <button id="random-search-btn">Smog It Up!</button>
+        </div>
+    </div>
 
+    <div id="footer">
+        <a href="#" id="advertising">Advertising</a>
+        <a href="#" id="business">Business</a>
+        <a href="#" id="hsw">How Search Works</a>
+        <a href="#" id="privacy">Privacy</a>
+        <a href="#" id="terms">Terms</a>
+        <a href="#" id="settings">Settings</a>
+    </div>
 
 </body>
 </htmL>

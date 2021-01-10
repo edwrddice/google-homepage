@@ -1,17 +1,197 @@
-<style>
+html, body {
+    height: 100%;
+    min-height: 100%;
+}  
 
 
+#navbar {
+    position: fixed;
+    margin: 0 auto 0 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas:
+        "about store . smail images menu signin"; 
+}
 
+a, p {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+a:hover {
+    text-decoration: underline;
+}
 
+#about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+}
 
+#store {
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+}
 
+#smail {
+    grid-area: smail;
+    justify-self: center;
+    align-self: center;
+}
 
+#images {
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
 
+#menu {
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+}
 
+#signin {
+    grid-area: signin;
+    justify-self: center;
+    align-self: center;
+    background-color: #552583;
+    height: 30px;
+    width: 60px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border: 1px solid gold;
+    font-weight: bold;
+}
 
+#main {
+    position: fixed;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px 70px 70px 250px;
+    grid-template-areas: 
+    ". logo ."
+    ". search ."
+    ". flexbox ."
+    ". . .";
+}
 
+#responsive-image {
+    height: auto;
+    max-width: 100%;
+}
 
+#logo{
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
 
+#search {
+    grid-area: search;
+    height: 20px;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
 
-</style>
+#search:focus {
+    box-shadow: 1px 1px 5px grey;
+}
+
+#search:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+
+#smogtown-search-btn {
+    border: none;
+    font-size: 15px;
+    color: #5F6368;
+    padding: 7px 15px 7px 10px;
+    border-radius: 3px;
+    margin-right: 25px;
+}
+
+#random-search-btn {
+    border: none;
+    font-size: 15px;
+    color: #5F6368;
+    padding: 7px 15px 7px 10px;
+    border-radius: 3px;
+}
+
+#smogtown-search-btn:hover {
+    border: 1px solid rgba(0, 0, 0, 0.226);
+}
+
+#random-search-btn:hover {
+    border: 1px solid rgba(0, 0, 0, 0.226);
+}
+
+/*Footer Section*/
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 100px 150px 1fr 70px 70px 70px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "advertising business hsw . privacy terms settings"
+}
+
+#advertising {
+    grid-area: advertising;
+    justify-self: center;
+    align-self: center;
+}
+
+#business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+}
+
+#hsw {
+    grid-area: hsw;
+    justify-self: center;
+    align-self: center;
+}
+
+#privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+}
+
+#terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+
+#settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
+}
